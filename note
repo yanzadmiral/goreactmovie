@@ -1,0 +1,35 @@
+Web Dev with Golang React - 01 Persiapan Project React
+Web Dev with Golang React 02 Integrasi Bootstrap dan Buat Layout
+Web Dev with Golang React 03 Membuat Halaman Dinamis di React dengan Router
+Web Dev with Golang React 04 Menampilkan Data dari State dan Hook di React
+Web Dev With Golang React 05 Membuat Component Genre List
+Web Dev With Golang React 06 Mendapatkan Nilai Parameter URL di React
+Web Dev With Golang React 07 Membuat REST API dengan Golang
+Web Dev With Golang React 08 Menggunakan Lib Httprouter Untuk Rest
+Web Dev With Golang React 09 Membuat File Entitas atau Model
+Web Dev With Golang React 10 Membuat API Endpoint Get One Movie
+Web Dev With Golang React 11 Membuat Error Response JSON
+Web Dev With Golang React 12 Membuat Database Dan Menghubungkan Di Golang
+Web Dev With Golang React 13 Menampilkan Data Movie Dari Database
+Web Dev With Golang React 14 Menampilkan Data Relasi Movie Dengan Genrenya
+Wev With Golang React 15 Menampilkan Seluruh Data Movie Dari Database Di Golang
+Web Dev With Golang React 16 Konfigurasi Cors Untuk Web Server Golang
+Web Dev With Golang React 17 Menampilkan Data Movie di React dari Golang
+Web Dev With Golang React 18 Menampilkan Pesan Error dari Golang ke React
+Web Dev With Golang React 19 Menampilkan Detail Movie Sesuai Nilai Id
+Web Dev With Golang React 20 Menampilkan Data Relasi Dari Object Ke Array
+Web Dev With Golang React 21 Refactor Detail Movie Component
+Web Dev With Golang React 22 Membuat API Endpoint Data Genre dari DB
+Web Dev With Golang React 23 Menampilkan Genre Di React Dari Web Service Go
+Web Dev With Golang React 24 Mendapatkan Movie Berdasarkan Genre Id Di Golang
+Web Dev With Golang React 25 Menampilkan Data Movies Berdasarkan Genre Di React Js
+Web Dev With Golang React - 26 Menampilkan Data Movie di dalam Tabel
+Web Dev With Golang React - 27 Persiapan Form untuk CRUD
+Web Dev With Golang React - 28 Menggunakan React Hook Form
+Web Dev With Golang React - 29 Persiapan Menyimpan Data ke Database dari Payload
+Web Dev With Golang React - 30 Menyimpan Data dari Form ke Database
+Web Dev With Golang React - 31 Persiapan Form Untuk Update Movie
+Web Dev With Golang React - 32 Mengubah Data Movie di Database
+Web Dev With Golang React - 33 Menghapus Data Movie Di Database
+Web Dev With Golang React - 34 Membuat Popup Confirm Delete
+Web Dev With Golang React - 35 Redirect Setelah Submit Form
