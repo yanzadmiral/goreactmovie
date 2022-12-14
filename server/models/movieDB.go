@@ -37,5 +37,40 @@ func (m *DBModel) Get(id int) (*Movie, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	query = `SELECT
+				mg.id,
+				mg.movie_id,
+				mg.genre_id,
+				g.genre_name
+			from
+				movies_genres mg
+			left join genres g on
+				mg.genre_id = g.id
+			where
+				mg.movie_id = $1`
+	rows, _ := m.DB.QueryContext(ctx, query, id)
+	defer rows.Close()
+
+	genres := make(map[int]string)
+
+	for rows.Next() {
+		var mg MovieGenre
+
+		err := rows.Scan(
+			&mg.ID,
+			&mg.MovieID,
+			&mg.GenreID,
+			&mg.Genre.GenreName,
+		)
+		if err != nil {
+			return nil, err
+		}
+
+		genres[mg.ID] = mg.Genre.GenreName
+	}
+
+	movie.MovieGenre = genres
+
 	return &movie, nil
 }
