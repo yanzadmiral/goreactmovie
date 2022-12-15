@@ -1,16 +1,25 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const MovieDetail = () => {
-  let { id } = useParams();
+const MovieDetail = ({movie}) => {
   return (
     <>
-      <h2>Movie: {id}</h2>
+      <h2>
+        Movie: {movie.title} / ({movie.year})
+      </h2>
       <div className="float-start">
-        <small>Rating: </small>
+        <small>Rating: {movie.mpaa_rating}</small>
       </div>
       <div className="float-end">
-        <span className="badge bg-secondary me-1">Action</span>
+        {Object.entries(movie.genre).map((genre, index) => (
+          <Link
+            className="badge bg-secondary me-1"
+            to={`/genres/${genre[0]}`}
+            key={index}
+          >
+            {genre[1]}
+          </Link>
+        ))}
       </div>
       <div className="clearfix"></div>
       <hr />
@@ -19,9 +28,15 @@ const MovieDetail = () => {
           <tbody>
             <tr>
               <td>title:</td>
+              <td>{movie.title}</td>
             </tr>
             <tr>
-              <td>Description</td>
+              <td>{movie.description}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Runtime:</td>
+              <td>{movie.runtime} Minute(s)</td>
             </tr>
           </tbody>
         </table>
@@ -30,4 +45,4 @@ const MovieDetail = () => {
   );
 };
 
-export default MovieDetail;
+export default React.memo(MovieDetail);

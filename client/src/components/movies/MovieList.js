@@ -12,7 +12,6 @@ const MovieList = () => {
     const fetchMovie = async () => {
      try {
        const result = await axios(`http://localhost:4000/movies`);
-       console.log(result)
        await setMovies(result.data.movies);
        setLoaded(true);
      } catch (error) {
